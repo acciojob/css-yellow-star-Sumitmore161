@@ -5,21 +5,17 @@
 	flex-direction: column;
 }
 #star span{
-	left:1rem;
 	position: absolute;
 	height:3rem;
 	width: 3rem;
 	background-color: yellow;
 }
 #down{
-	top:2rem;
 	transform: skew(-30deg);
 }
 #up {
-	top:2rem;
 	transform:skew(30deg);
 }
 #left {
-	top:2rem;
 	transform: rotate(56deg) skew(30deg);
 }
