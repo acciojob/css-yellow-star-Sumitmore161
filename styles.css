@@ -1,10 +1,10 @@
 /*  your css code here. If applicable */
-#star{
+.star{
 	display:flex;
 	position: relative;
 	flex-direction: column;
 }
-#star span{
+.star span{
 	position: absolute;
 	height:3rem;
 	width: 3rem;
