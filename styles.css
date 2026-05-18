@@ -1,21 +1,36 @@
-/*  your css code here. If applicable */
-.star{
-	display:flex;
-	position: relative;
-	flex-direction: column;
-}
-.star span{
-	position: absolute;
-	height:3rem;
-	width: 3rem;
-	background-color: yellow;
-}
-#down{
-	transform: skew(-30deg);
-}
-#up {
-	transform:skew(30deg);
-}
-#left {
-	transform: rotate(56deg) skew(30deg);
-}
+  .star {
+      position: relative;
+      width: 0;
+      height: 0;
+      margin: 100px auto;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid yellow;
+      transform: rotate(35deg);
+    }
+
+    .star::before {
+      content: "";
+      position: absolute;
+      top: -22px;
+      left: -32px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 40px solid yellow;
+      transform: rotate(-35deg);
+    }
+
+    .star::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: -52px;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid yellow;
+      transform: rotate(-70deg);
+    }
